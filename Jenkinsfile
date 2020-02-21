@@ -4,6 +4,9 @@ pipeline {
       image 'node:8.16.0'
     }
   }
+  environment {
+      HOME = '.'
+  }
   stages {
     stage('Build') {
       steps {
